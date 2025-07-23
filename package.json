@@ -1,6 +1,6 @@
 {
   "name": "flare-router",
-  "version": "0.0.0-meme.12",
+  "version": "1.0.0",
   "description": "Blazingly fast SPA-like router for static sites - Pure vanilla JS",
   "main": "dist/main.js",
   "type": "module",
@@ -16,9 +16,18 @@
     "test": "playwright test",
     "deploy": "node ./deploy-vercel.mjs && vercel deploy --prebuilt"
   },
-  "keywords": [],
+  "keywords": [
+    "router",
+    "spa",
+    "navigation",
+    "vanilla-js",
+    "prefetch",
+    "static-sites",
+    "flare",
+    "lightweight"
+  ],
   "author": "dunamismax <dunamismax@tutamail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@playwright/test": "^1.25.0",
     "eslint": "^8.22.0",

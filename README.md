@@ -12,6 +12,7 @@
   <a href="https://www.npmjs.com/package/flare-router"><img src="https://img.shields.io/npm/v/flare-router.svg?color=FF6B35" alt="npm version"></a>
   <a href="https://www.npmjs.com/package/flare-router"><img src="https://img.shields.io/npm/dm/flare-router.svg?color=FF6B35" alt="npm downloads"></a>
   <a href="https://bundlephobia.com/package/flare-router"><img src="https://img.shields.io/bundlephobia/minzip/flare-router?color=FF6B35" alt="Bundle Size"></a>
+  <a href="https://github.com/dunamismax/FlareJS"><img src="https://img.shields.io/github/stars/dunamismax/FlareJS?style=social" alt="GitHub stars"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/Vanilla_JS-ES2020+-F7DF1E.svg?logo=javascript" alt="Vanilla JS"></a>
   <a href="https://playwright.dev/"><img src="https://img.shields.io/badge/Tests-Playwright-45ba4b.svg?logo=playwright" alt="Playwright"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
