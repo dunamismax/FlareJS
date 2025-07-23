@@ -9,12 +9,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax/FlareJS/releases"><img src="https://img.shields.io/github/v/release/dunamismax/FlareJS?color=FF6B35" alt="version"></a>
   <a href="https://github.com/dunamismax/FlareJS"><img src="https://img.shields.io/badge/Bundle_Size-2kB-FF6B35.svg" alt="Bundle Size"></a>
-  <a href="https://github.com/dunamismax/FlareJS"><img src="https://img.shields.io/github/stars/dunamismax/FlareJS?style=social" alt="GitHub stars"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/Vanilla_JS-ES2020+-F7DF1E.svg?logo=javascript" alt="Vanilla JS"></a>
   <a href="https://playwright.dev/"><img src="https://img.shields.io/badge/Tests-Playwright-45ba4b.svg?logo=playwright" alt="Playwright"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
+  <a href="https://github.com/dunamismax/FlareJS"><img src="https://img.shields.io/github/stars/dunamismax/FlareJS?style=social" alt="GitHub stars"></a>
 </p>
 
 ---
