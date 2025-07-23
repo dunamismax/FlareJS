@@ -1,0 +1,32 @@
+{
+  "name": "flare-router",
+  "version": "0.0.0-meme.12",
+  "description": "Blazingly fast SPA-like router for static sites - Pure vanilla JS",
+  "main": "dist/main.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dunamismax/FlareJS.git"
+  },
+  "homepage": "https://github.com/dunamismax/FlareJS#readme",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "serve": "serve ./example",
+    "test": "playwright test",
+    "deploy": "node ./deploy-vercel.mjs && vercel deploy --prebuilt"
+  },
+  "keywords": [],
+  "author": "dunamismax <dunamismax@tutamail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.25.0",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-sonarjs": "^0.15.0",
+    "prettier": "^2.7.1",
+    "serve": "^14.0.1",
+    "vite": "^3.0.7"
+  }
+}
