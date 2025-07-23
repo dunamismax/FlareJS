@@ -1,131 +1,285 @@
-# Flare.js 🔥
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/Vanilla-JS-Logo.png" alt="FlareJS Router" width="200" />
+</p>
 
-Status: Meme
+<p align="center">
+  <a href="https://github.com/dunamismax/FlareJS">
+ <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=FF6B35&center=true&vCenter=true&width=1000&lines=FlareJS+Router+%2B+2kB+Bundle+Size;Lightning-Fast+SPA+Navigation;Zero+Configuration+Setup;Intelligent+Link+Prefetching;Static+Sites+Feel+Like+SPAs;IntersectionObserver+Prefetch;Long-Lived+JavaScript+State;Framework+Agnostic+Solution;Vanilla+JavaScript+Power;Turbo-Inspired+Architecture;Production+Ready+Router;Blazingly+Fast+Performance;Modern+Browser+APIs;Zero+Dependencies+Required;Drop-In+Solution" alt="Typing SVG" />
+  </a>
+</p>
 
-A 2kB zero-config router and prefetcher that makes a static site feel like a blazingly fast SPA.
+<p align="center">
+  <a href="https://www.npmjs.com/package/flare-router"><img src="https://img.shields.io/npm/v/flare-router.svg?color=FF6B35" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/flare-router"><img src="https://img.shields.io/npm/dm/flare-router.svg?color=FF6B35" alt="npm downloads"></a>
+  <a href="https://bundlephobia.com/package/flare-router"><img src="https://img.shields.io/bundlephobia/minzip/flare-router?color=FF6B35" alt="Bundle Size"></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/Vanilla_JS-ES2020+-F7DF1E.svg?logo=javascript" alt="Vanilla JS"></a>
+  <a href="https://playwright.dev/"><img src="https://img.shields.io/badge/Tests-Playwright-45ba4b.svg?logo=playwright" alt="Playwright"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
+</p>
 
-## Why?
+---
 
-**Problem:** Static sites feel slow and cannot easily share state between pages. This makes it difficult to create a pleasant user experience (UX) with JavaScript libraries because each new page needs to reboot your JS from scratch.
+# FlareJS Router 🔥
 
-Rather than requiring a frontend framework to take control of the entire DOM, the goal is to make route changes on static sites feel faster, like a SPA.
+A **2kB zero-config router** and intelligent prefetcher that makes static sites feel like blazingly fast SPAs. Transform any multi-page website into a lightning-fast experience without framework overhead.
 
-## How?
+## Features
 
-1. It tells the browser to prefetch visible links in the current page with `IntersectionObserver`.
-2. Intercepts click and popstate events, then updates the HTML5 history on route changes.
-3. Uses `fetch` to get the next page, swaps the `<body>` out, merges the `<head>`, but does not re-execute head scripts (unless asked to).
+- **Ultra-Lightweight** - Only 2kB gzipped bundle size
+- **Zero Configuration** - Works out of the box with any static site
+- **Intelligent Prefetching** - Automatic link prefetching with IntersectionObserver
+- **SPA-like Navigation** - Instant page transitions without full reloads
+- **State Preservation** - Long-lived JavaScript behaviors between navigations
+- **Framework Agnostic** - Drop-in solution for any website architecture
+- **Modern Browser APIs** - Built with IntersectionObserver, Fetch API, and History API
 
-This means you can have long-lived JavaScript behaviors between navigations. It works especially well with native web components.
+## Project Structure
 
-## QuickStart
-
+```sh
+├── lib/
+│   ├── main.js                # Main router entry point
+│   ├── router.js              # Core router logic and navigation
+│   ├── handlers.js            # Click and popstate event handlers
+│   └── dom.js                 # DOM manipulation and head merging
+├── example/                   # Example implementation
+├── test/                      # Playwright test suite
+├── dist/                      # Built bundles (ES modules + UMD)
+└── Configuration files        # Vite, Playwright, package.json
 ```
-npm i flare-router
-```
 
-```js
+---
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/JavaScript-logo.png" alt="JavaScript" width="100" />
+</p>
+
+## Quick Start
+
+**Prerequisites:** Modern browser with ES modules support
+
+### Get Running in 3 Steps
+
+```bash
+# 1. Install FlareJS Router
+npm install flare-router
+
+# 2. Import and initialize
 import flare from 'flare-router';
 const router = flare();
+
+# 3. That's it! Your site now feels blazingly fast
 ```
 
-That's it. Your site now feels blazingly fast.
+**Example Implementation:**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Fast Site</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+
+    <main>
+      <!-- Your content -->
+    </main>
+
+    <script type="module">
+      import flare from 'flare-router';
+      const router = flare({ prefetch: 'visible', log: true });
+    </script>
+  </body>
+</html>
+```
+
+## Tech Stack
+
+**Core:** Vanilla JavaScript ES Modules, IntersectionObserver API, Fetch API, History API  
+**Build:** Vite bundler with ES modules and UMD outputs  
+**Testing:** Playwright for cross-browser testing  
+**Deployment:** npm package with CDN support
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/js-evolution-wallpaper.jpg" alt="JavaScript Evolution" width="450" />
+</p>
+
+## Architecture
+
+**How FlareJS Works:**
+
+1. **Intelligent Prefetching** - Uses IntersectionObserver to detect visible links and prefetches them
+2. **Event Interception** - Captures click and popstate events for seamless navigation
+3. **Smart DOM Updates** - Fetches new pages, swaps `<body>` content, and merges `<head>` elements
+4. **State Preservation** - Maintains JavaScript state and long-lived behaviors between navigations
+
+## Development Scripts
+
+```bash
+# Development
+npm run dev           # Build in watch mode with Vite
+npm run build         # Build production bundles
+npm run serve         # Serve example application
+
+# Testing
+npm test              # Run Playwright test suite
+npm run test:headed   # Run tests with browser UI
+
+# Deployment
+npm run deploy        # Deploy example to Vercel
+```
 
 ## Advanced Usage
 
-```js
-// with opts
-const router = flare({ prefetch: 'visible', log: false, pageTransitions: false });
+**Router Configuration:**
 
-// Navigate manually
-router.go('/somewhere');
-router.back();
-router.forward();
-
-// Listen to events
-window.addEventListener('flare:router:fetch', showLoader);
-window.addEventListener('flare:router:fetch-progress', updateProgressBar);
-window.addEventListener('flare:router:end', hideLoader);
-
-// Disable it
-router.enabled = false;
-```
-
-Opt-out of specific links for full page load.
-
-```html
-<a href="/somewhere" data-cold></a>
-```
-
-Scripts in `<body>` will run on every page change, but you can force scripts in the `<head>` to run:
-
-```html
-<script src="..." data-reload></script>
-```
-
-The fetch-progress event is a custom event, so usage will look something like this:
-```js
-window.addEventListener('flare:router:fetch-progress', ({ detail }) => {
-	const progressBar = document.getElementById('progress-bar');
-	// progress & length will be 0 if there is no Content-Length header
-	const bytesReceived = detail.received; // number
-	const length = detail.length; // number
-	progressBar.style.width = detail.progress + '%';
+```javascript
+const router = flare({
+  prefetch: 'visible', // 'visible', 'hover', or false
+  log: true, // Enable debug logging
+  pageTransitions: false, // Enable native browser transitions (experimental)
 });
 ```
 
-### Prefetching
+**Programmatic Navigation:**
 
-Prefecthing is disabled by default.
+```javascript
+// Navigate to specific routes
+router.go('/dashboard');
+router.back();
+router.forward();
 
-- `visible`: prefetch visible links on the page with IntersectionObserver
-- `hover`: prefetch links on hover
-
-```js
-const router = flare({ prefetch: 'visible' });
+// Disable/enable router
+router.enabled = false;
 ```
 
-### Misc
+**Event Handling:**
 
-**Supported in all browsers?** Yes. It will fallback to standard navigation if `window.history` does not exist.
+```javascript
+// Listen to router events
+window.addEventListener('flare:router:fetch', () => {
+  showLoadingSpinner();
+});
 
-**Does it work with Next.js?** No, any framework that fully hydrates to an SPA does not need this - you already have a client-side router.
+window.addEventListener('flare:router:fetch-progress', ({ detail }) => {
+  updateProgressBar(detail.progress);
+});
 
-**Does it work with Astro?** I think so. It can share state between routes, but partially hydrated components may flash between routes.
-
-**Other things to know:**
-
-- `<head>` scripts run only on the first page load. `<body>` scripts will still run on every page change (by design).
-- It's a good idea to show a global loading bar in case of a slow page load.
-- This library is inspired by [Turbo](https://github.com/hotwired/turbo) Drive.
-- This project is experimental.
-
-### Contributing
-
-Build it:
-
-```
-npm run dev
+window.addEventListener('flare:router:end', () => {
+  hideLoadingSpinner();
+});
 ```
 
-Serve the example:
+**Link Control:**
 
-```
-npm run serve
-```
+```html
+<!-- Opt-out specific links for full page reload -->
+<a href="/external-site" data-cold>External Link</a>
 
-Make sure all playwright tests pass before submitting new features.
-
-```
-npm run test
+<!-- Force head scripts to reload -->
+<script src="/analytics.js" data-reload></script>
 ```
 
-### Deploying
+## Code Examples
 
-You can deploy Flare.js to [Vercel](http://vercel.com/) as follows:
+**Basic Setup:**
 
+```javascript
+import flare from 'flare-router';
+
+// Initialize with default settings
+const router = flare();
 ```
-npm run deploy
+
+**Advanced Configuration:**
+
+```javascript
+import flare from 'flare-router';
+
+// Full configuration
+const router = flare({
+  prefetch: 'visible',
+  log: true,
+  pageTransitions: false,
+});
+
+// Manual navigation
+router.go('/products');
+
+// Event listeners
+window.addEventListener('flare:router:fetch', showLoader);
+window.addEventListener('flare:router:end', hideLoader);
 ```
 
-This uses the [Build Output API](https://vercel.com/docs/build-output-api/v3) and the [Vercel CLI](https://vercel.com/cli) to deploy the `/example` folder.
+**Progress Tracking:**
+
+```javascript
+window.addEventListener('flare:router:fetch-progress', ({ detail }) => {
+  const progressBar = document.getElementById('progress-bar');
+  const { progress, received, length } = detail;
+
+  progressBar.style.width = `${progress}%`;
+  console.log(`Downloaded ${received} of ${length} bytes`);
+});
+```
+
+## Browser Support
+
+**Supported:** All modern browsers with ES modules, IntersectionObserver, Fetch API, and History API support
+
+**Fallback:** Gracefully degrades to standard navigation in unsupported browsers
+
+**Framework Compatibility:**
+
+- ✅ Static sites (HTML, Jekyll, Hugo, etc.)
+- ✅ Server-rendered applications
+- ✅ Astro (with considerations for hydration)
+- ❌ Next.js/Nuxt.js (already have client-side routing)
+
+## Contributing
+
+1. Fork and create feature branch
+2. Make changes following existing patterns
+3. Run `npm run build && npm test`
+4. Submit pull request
+
+**Development Workflow:**
+
+- Uses Vite for fast development builds
+- Playwright for comprehensive browser testing
+- ESLint and Prettier for code quality
+
+## License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/dunamismax">
+ <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://twitter.com/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
+  <a href="https://bsky.app/profile/dunamismax.bsky.social" target="_blank"><img src="https://img.shields.io/badge/Bluesky-blue?style=for-the-badge&logo=bluesky&logoColor=white" alt="Bluesky"></a>
+  <a href="https://reddit.com/user/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?&style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit"></a>
+  <a href="https://discord.com/users/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Discord-dunamismax-7289DA.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
+  <a href="https://signal.me/#p/+dunamismax.66" target="_blank"><img src="https://img.shields.io/badge/Signal-dunamismax.66-3A76F0.svg?style=for-the-badge&logo=signal&logoColor=white" alt="Signal"></a>
+</p>
+
+---
+
+<p align="center">
+  <strong>FlareJS Router - Lightning-Fast Navigation for Static Sites</strong><br>
+  <sub>2kB Bundle • Zero Config • Intelligent Prefetching • Framework Agnostic • Vanilla JavaScript</sub>
+</p>
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/js-coffee-particles.jpg" alt="JavaScript Coffee" width="450" />
+</p>
