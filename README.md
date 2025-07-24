@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax/flare-router"><img src="https://img.shields.io/badge/Bundle_Size-2kB-FF6B35.svg" alt="Bundle Size"></a>
+  <a href="https://github.com/dunamismax/flare-router"><img src="https://img.shields.io/badge/Bundle_Size-3.4kB-FF6B35.svg" alt="Bundle Size"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/Vanilla_JS-ES2020+-F7DF1E.svg?logo=javascript" alt="Vanilla JS"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
   <a href="https://github.com/dunamismax/flare-router"><img src="https://img.shields.io/github/stars/dunamismax/flare-router?style=social" alt="GitHub stars"></a>
@@ -19,7 +19,7 @@
 
 # flare-router 🔥
 
-A **2kB zero-config router** and intelligent prefetcher that makes static sites feel like blazingly fast SPAs. Transform any multi-page website into a lightning-fast experience without framework overhead.
+A **3.4kB zero-config router** and intelligent prefetcher that makes static sites feel like blazingly fast SPAs. Transform any multi-page website into a lightning-fast experience without framework overhead.
 
 ## Features
 
