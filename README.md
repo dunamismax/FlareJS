@@ -96,13 +96,9 @@ const router = flare();
 
 ## Tech Stack
 
-**Core:** Vanilla JavaScript ES Modules, IntersectionObserver API, Fetch API, History API  
+**Core:** Vanilla JavaScript ES Modules, IntersectionObserver API, Fetch API, History API
 **Build:** esbuild for bundling
 **Deployment:** npm package with CDN support
-
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/js-evolution-wallpaper.jpg" alt="JavaScript Evolution" width="450" />
-</p>
 
 ## Architecture
 
@@ -170,6 +166,10 @@ window.addEventListener('flare:router:end', () => {
 <!-- Force head scripts to reload -->
 <script src="/analytics.js" data-reload></script>
 ```
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/js-evolution-wallpaper.jpg" alt="JavaScript Evolution" width="450" />
+</p>
 
 ## Code Examples
 
