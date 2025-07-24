@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/Vanilla-JS-Logo.png" alt="flare-router Router" width="200" />
+  <img src="https://github.com/dunamismax/images/blob/main/Vanilla-JS-Logo.png" alt="flare-router" width="200" />
 </p>
 
 <p align="center">
@@ -11,14 +11,13 @@
 <p align="center">
   <a href="https://github.com/dunamismax/flare-router"><img src="https://img.shields.io/badge/Bundle_Size-2kB-FF6B35.svg" alt="Bundle Size"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/Vanilla_JS-ES2020+-F7DF1E.svg?logo=javascript" alt="Vanilla JS"></a>
-  <a href="https://playwright.dev/"><img src="https://img.shields.io/badge/Tests-Playwright-45ba4b.svg?logo=playwright" alt="Playwright"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
   <a href="https://github.com/dunamismax/flare-router"><img src="https://img.shields.io/github/stars/dunamismax/flare-router?style=social" alt="GitHub stars"></a>
 </p>
 
 ---
 
-# flare-router Router 🔥
+# flare-router 🔥
 
 A **2kB zero-config router** and intelligent prefetcher that makes static sites feel like blazingly fast SPAs. Transform any multi-page website into a lightning-fast experience without framework overhead.
 
@@ -41,9 +40,8 @@ A **2kB zero-config router** and intelligent prefetcher that makes static sites 
 │   ├── handlers.js            # Click and popstate event handlers
 │   └── dom.js                 # DOM manipulation and head merging
 ├── example/                   # Example implementation
-├── test/                      # Playwright test suite
-├── dist/                      # Built bundles (ES modules + UMD)
-└── Configuration files        # Vite, Playwright, package.json
+├── dist/                      # Built bundles
+└── package.json               # Package configuration
 ```
 
 ---
@@ -59,7 +57,7 @@ A **2kB zero-config router** and intelligent prefetcher that makes static sites 
 ### Get Running in 3 Steps
 
 ```bash
-# 1. Install flare-router Router
+# 1. Install flare-router
 npm install flare-router
 
 # 2. Import and initialize
@@ -99,8 +97,7 @@ const router = flare();
 ## Tech Stack
 
 **Core:** Vanilla JavaScript ES Modules, IntersectionObserver API, Fetch API, History API  
-**Build:** Vite bundler with ES modules and UMD outputs  
-**Testing:** Playwright for cross-browser testing  
+**Build:** esbuild for bundling
 **Deployment:** npm package with CDN support
 
 <p align="center">
@@ -119,17 +116,8 @@ const router = flare();
 ## Development Scripts
 
 ```bash
-# Development
-npm run dev           # Build in watch mode with Vite
-npm run build         # Build production bundles
-npm run serve         # Serve example application
-
-# Testing
-npm test              # Run Playwright test suite
-npm run test:headed   # Run tests with browser UI
-
-# Deployment
-npm run deploy        # Deploy example to Vercel
+# Build production bundles
+npm run build
 ```
 
 ## Advanced Usage
@@ -243,13 +231,12 @@ window.addEventListener('flare:router:fetch-progress', ({ detail }) => {
 
 1. Fork and create feature branch
 2. Make changes following existing patterns
-3. Run `npm run build && npm test`
+3. Run `npm run build`
 4. Submit pull request
 
 **Development Workflow:**
 
-- Uses Vite for fast development builds
-- Playwright for comprehensive browser testing
+- Uses esbuild for fast development builds
 - ESLint and Prettier for code quality
 
 ## License
