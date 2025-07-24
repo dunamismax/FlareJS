@@ -10,11 +10,9 @@
   },
   "homepage": "https://github.com/dunamismax/FlareJS#readme",
   "scripts": {
-    "dev": "vite build --watch",
-    "build": "vite build",
-    "serve": "serve ./example",
-    "test": "playwright test",
-    "deploy": "node ./deploy-vercel.mjs && vercel deploy --prebuilt"
+    "build": "pnpm run build:main",
+    "build:main": "esbuild lib/main.js --bundle --outfile=dist/main.js --format=esm",
+    "prepublishOnly": "pnpm run build"
   },
   "keywords": [
     "router",
@@ -29,13 +27,11 @@
   "author": "dunamismax <dunamismax@tutamail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.25.0",
+    "esbuild": "^0.23.0",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-sonarjs": "^0.15.0",
-    "prettier": "^2.7.1",
-    "serve": "^14.0.1",
-    "vite": "^3.0.7"
+    "prettier": "^2.7.1"
   }
 }
