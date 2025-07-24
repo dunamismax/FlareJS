@@ -1,24 +1,24 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/Vanilla-JS-Logo.png" alt="FlareJS Router" width="200" />
+  <img src="https://github.com/dunamismax/images/blob/main/Vanilla-JS-Logo.png" alt="flare-router Router" width="200" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax/FlareJS">
- <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=FF6B35&center=true&vCenter=true&width=1000&lines=FlareJS+Router+%2B+2kB+Bundle+Size;Lightning-Fast+SPA+Navigation;Zero+Configuration+Setup;Intelligent+Link+Prefetching;Static+Sites+Feel+Like+SPAs;IntersectionObserver+Prefetch;Long-Lived+JavaScript+State;Framework+Agnostic+Solution;Vanilla+JavaScript+Power;Turbo-Inspired+Architecture;Production+Ready+Router;Blazingly+Fast+Performance;Modern+Browser+APIs;Zero+Dependencies+Required;Drop-In+Solution" alt="Typing SVG" />
+  <a href="https://github.com/dunamismax/flare-router">
+ <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=FF6B35&center=true&vCenter=true&width=1000&lines=flare-router+Router+%2B+2kB+Bundle+Size;Lightning-Fast+SPA+Navigation;Zero+Configuration+Setup;Intelligent+Link+Prefetching;Static+Sites+Feel+Like+SPAs;IntersectionObserver+Prefetch;Long-Lived+JavaScript+State;Framework+Agnostic+Solution;Vanilla+JavaScript+Power;Turbo-Inspired+Architecture;Production+Ready+Router;Blazingly+Fast+Performance;Modern+Browser+APIs;Zero+Dependencies+Required;Drop-In+Solution" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax/FlareJS"><img src="https://img.shields.io/badge/Bundle_Size-2kB-FF6B35.svg" alt="Bundle Size"></a>
+  <a href="https://github.com/dunamismax/flare-router"><img src="https://img.shields.io/badge/Bundle_Size-2kB-FF6B35.svg" alt="Bundle Size"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/Vanilla_JS-ES2020+-F7DF1E.svg?logo=javascript" alt="Vanilla JS"></a>
   <a href="https://playwright.dev/"><img src="https://img.shields.io/badge/Tests-Playwright-45ba4b.svg?logo=playwright" alt="Playwright"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
-  <a href="https://github.com/dunamismax/FlareJS"><img src="https://img.shields.io/github/stars/dunamismax/FlareJS?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/dunamismax/flare-router"><img src="https://img.shields.io/github/stars/dunamismax/flare-router?style=social" alt="GitHub stars"></a>
 </p>
 
 ---
 
-# FlareJS Router 🔥
+# flare-router Router 🔥
 
 A **2kB zero-config router** and intelligent prefetcher that makes static sites feel like blazingly fast SPAs. Transform any multi-page website into a lightning-fast experience without framework overhead.
 
@@ -59,7 +59,7 @@ A **2kB zero-config router** and intelligent prefetcher that makes static sites 
 ### Get Running in 3 Steps
 
 ```bash
-# 1. Install FlareJS Router
+# 1. Install flare-router Router
 npm install flare-router
 
 # 2. Import and initialize
@@ -109,7 +109,7 @@ const router = flare();
 
 ## Architecture
 
-**How FlareJS Works:**
+**How flare-router Works:**
 
 1. **Intelligent Prefetching** - Uses IntersectionObserver to detect visible links and prefetches them
 2. **Event Interception** - Captures click and popstate events for seamless navigation
@@ -275,7 +275,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ---
 
 <p align="center">
-  <strong>FlareJS Router - Lightning-Fast Navigation for Static Sites</strong><br>
+  <strong>flare-router Router - Lightning-Fast Navigation for Static Sites</strong><br>
   <sub>2kB Bundle • Zero Config • Intelligent Prefetching • Framework Agnostic • Vanilla JavaScript</sub>
 </p>
 

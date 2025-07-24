@@ -6,9 +6,9 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dunamismax/FlareJS.git"
+    "url": "https://github.com/dunamismax/flare-router.git"
   },
-  "homepage": "https://github.com/dunamismax/FlareJS#readme",
+  "homepage": "https://github.com/dunamismax/flare-router#readme",
   "scripts": {
     "build": "pnpm run build:main",
     "build:main": "esbuild lib/main.js --bundle --outfile=dist/main.js --format=esm",

@@ -1,13 +1,58 @@
+# ===================================================================
+# General
+# ===================================================================
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+# ===================================================================
+# Node
+# ===================================================================
+
 # Logs
-dist/
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-/dist
-.rpt2_cache
-.rts2_cache_cjs
+lerna-debug.log*
+pnpm-debug.log*
 
 # Runtime data
 pids
@@ -20,15 +65,10 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
-
-# nyc test coverage
 .nyc_output
 
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
-
-# Bower dependency directory (https://bower.io/)
-bower_components
 
 # node-waf configuration
 .lock-wscript
@@ -39,9 +79,6 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-
-# TypeScript v1 declaration files
-typings/
 
 # Optional npm cache directory
 .npm
@@ -60,17 +97,76 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.test
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
-/test-results/
-/playwright-report/
-/playwright/.cache/
+
+# Next.js build output
+.next/
+out/
+
+# Nuxt.js build output
+.nuxt/
+dist/
+
+# SvelteKit build output
+.svelte-kit/
+
+# Gatsby build output
+.cache/
+public/
+
+# Docusaurus build output
+.docusaurus/
+
+# Vercel build output
+# https://vercel.com/docs/build-output-api/v3
+.vercel/
+
+# ===================================================================
+# Editor / IDE
+# ===================================================================
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# ===================================================================
+# Testing
+# ===================================================================
+
+# Playwright
+playwright-report/
+playwright/.cache/
+test-results/
+
+# ===================================================================
+# Project Specific
+# ===================================================================
+
+# Build output
+dist/
+
+# Firebase
 firebase.json
 .firebaserc
-/.firebase/
-/example/flamethrower.js
-
-# vercel build output api
-# https://vercel.com/docs/build-output-api/v3
-.vercel
+.firebase/
