@@ -50,6 +50,24 @@ A **3.4kB zero-config router** and intelligent prefetcher that makes static site
   <img src="https://github.com/dunamismax/images/blob/main/javascript/JavaScript-logo.png" alt="JavaScript" width="100" />
 </p>
 
+## Installation
+
+Install via NPM:
+
+```bash
+npm install flare-router
+```
+
+Or with other package managers:
+
+```bash
+# yarn
+yarn add flare-router
+
+# pnpm
+pnpm add flare-router
+```
+
 ## Quick Start
 
 **Prerequisites:** Modern browser with ES modules support
